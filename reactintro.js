@@ -1,8 +1,9 @@
 import React from "react";
+import {render} from "react-dom";
 
-function createDivElement() {
-    return React.createElement("div", {}, "Hello World!")
-}
+const element = React.createElement("h1", {}, "Online Supermarket");
+const root = document.querySelector("#react-root");
 
-// sample usage (do not modify)
-console.log(createDivElement());
+render(element, root);
+
+//Root element goes into index.html -> <div id="react-root"></div>
